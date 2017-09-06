@@ -2,7 +2,7 @@ import boto3
 from botocore.client import Config
 import StringIO
 import zipfile
-
+import mimetypes
 
 def lambda_handler(event, context):
     sns = boto3.resource('sns')
@@ -34,7 +34,8 @@ def lambda_handler(event, context):
         with zipfile.ZipFile(portfolio_zip) as zipped_portfolio:
             for name in zipped_portfolio.namelist():
                 obj = zipped_portfolio.open(name)
-                portfolio_bucket.upload_fileobj(obj, name)
+                portfolio_bucket.upload_fileobj(obj, name,
+                  ExtraArgs={'ContentType': mimetypes.guess_type(name)[0]})
                 portfolio_bucket.Object(name).Acl().put(ACL='public-read')
 
         print "Job Done!"
