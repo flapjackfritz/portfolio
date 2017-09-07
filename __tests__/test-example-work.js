@@ -42,6 +42,6 @@ describe("ExampleWorkBuble component", () => {
   });
 
   it("Should have the image source set correctly", () => {
-    expact(images.node.pros.src).toEqual(myWork[1].image.src);
+    expect(images.node.props.src).toEqual(myWork[1].image.src);
   });
 })
