@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ExampleWork from './example-work';
+import 'bootstrap';
+require('../styles/main.scss');
 
 const myWork = [
   {
@@ -35,4 +37,4 @@ const myWork = [
   },
 ]
 
-ReactDOM.render(<ExampleWork work={myWork}/>, document.getElementById('example-work'));
+//ReactDOM.render(<ExampleWork work={myWork}/>, document.getElementById('example-work'));

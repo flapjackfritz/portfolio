@@ -1,82 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title>Tommy Fritz - Web Developer and Cloud Architect</title>
-    <link rel="stylesheet" href="styles/main.css"/>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo"/>
   </head>
 
   <body>
-    <main class="overflow--auto">
-      <h1 class="color--skyBlue section__heading--largest">
-        <!--Your name goes here -->
-        TOMMY FRITZ
-      </h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <ul class="section--social">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resume</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="socialWrapper">
+            <a class="social color--white"
+               title="LinkedIn Profile"
+               target="_blank"
+               href="https://www.linkedin.com/in/tommy-fritz-257b3233/">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="socialWrapper">
+            <a class="social color--white"
+               title="GitHub Profile"
+               target="_blank"
+               href="https://github.com/flapjackfritz">
+              <i class="fa fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-        <!--Links to relevant professional social media & resume -->
-        <!-- See: http://fontawesome.io/icons/#brand for more -->
 
-        <!-- Link to Linked In profile -->
-        <li class="socialWrapper">
-          <a class="color--skyBlue social"
-             title="LinkedIn Profile"
-             target="_blank"
-             href="https://www.linkedin.com/in/tommy-fritz-257b3233/">
-            <i class="fa fa-linkedin"></i>
-          </a>
-        </li>
-
-        <!-- Link to GitHub profile -->
-        <li class="socialWrapper color--skyBlue">
-          <a class="social color--skyBlue"
-             title="GitHub Profile"
-             target="_blank"
-             href="https://github.com/flapjackfritz">
-            <i class="fa fa-github"></i>
-          </a>
-        </li>
-
-        <!-- Link to resume, probably a .pdf -->
-        <li class="socialWrapper">
-          <a class="social color--skyBlue"
-             title="Resume"
-             target="_blank"
-             href="https://docs.google.com/document/d/1pcfv8d7eAkboRA6X4P9yAG8a4o12MHoXarN5QjTO0UU/edit?usp=sharing">
-            <i class="fa fa-file-text"></i>
-          </a>
-        </li>
-      </ul>
-    </main>
-
-    <section class="background--skyBlue section">
-      <h2 class="color--cloud margin--none section__text--centered">
-        Portfolio
-      </h2>
-    </section>
-
-    <div id="example-work"></div>
-
-    <section class="background--skyBlue section">
-      <h2 class="color--cloud margin--none section__text--centered">
-        About Me
-      </h2>
-    </section>
-
-    <section class="section section--alignCentered section--description">
-      <p class="color--darkgrey section__description">
-        I am an AWS certified web engineer with an emphasis on Ruby on Rails. I have worked on more than 20 different production products, from designing and implementing API's for mobile consumption, to eCommerce web stores, and custom client business websites.
-      </p>
-    </section>
-
-    <script type="text/javascript" src="dist/bundle.js">
-    </script>
+    <script type="text/javascript" src="dist/bundle.js"></script>
 
   </body>
 </html>
