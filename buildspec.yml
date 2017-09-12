@@ -13,6 +13,5 @@ artifacts:
   files:
     - index.html
     - favicon.ico
-    - styles/*
     - images/*
     - dist/bundle.js

@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ExampleWork from './example-work';
 import 'bootstrap';
+import ExampleWork from './example-work';
+import PortfolioNav from './portfolio-nav';
 require('../styles/main.scss');
 
 const myWork = [
@@ -37,4 +38,5 @@ const myWork = [
   },
 ]
 
+ReactDOM.render(<PortfolioNav/>, document.getElementById('portfolio-nav'));
 //ReactDOM.render(<ExampleWork work={myWork}/>, document.getElementById('example-work'));

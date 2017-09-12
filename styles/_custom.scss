@@ -1,3 +1,47 @@
 .background--gradiant {
   background-image: linear-gradient(-176deg, #FF59EA, #21FCFF);
 }
+
+.full-width {
+  width: 700px;
+}
+
+.nav-container {
+  margin: auto;
+  height: 60px;
+  display: flex;
+}
+
+.nav-icon {
+  font-size: 40px;
+}
+
+.color--grey {
+  color: #979797;
+}
+
+.nav-list {
+  list-style: none;
+  margin: auto;
+}
+
+.nav-item {
+  display: inline;
+  margin: auto;
+}
+
+.nav-links {
+  margin-left: 0px;
+  padding-left: 0px;
+  li {
+    padding-right: 15px;
+  }
+}
+
+.nav-social {
+  margin-right: 0px;
+  padding-right: 0px;
+  li {
+    padding-left: 15px;
+  }
+}

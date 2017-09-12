@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Tommy Fritz's portfolio website",
   "main": "index.js",
   "dependencies": {
@@ -39,7 +39,7 @@
     "url": "git+https://github.com/flapjackfritz/portfolio.git"
   },
   "author": "Tommy Fritz",
-  "license": "ISC",
+  "license": "Copyright Tommy Fritz 2017 -- All Rights Reserved",
   "bugs": {
     "url": "https://github.com/flapjackfritz/portfolio/issues"
   },
