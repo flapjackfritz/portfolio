@@ -1,5 +1,10 @@
+$primary-blue: #21FCFF;
+$primary-pink: #FF59EA;
+$secondary-grey: #979797;
+$font-black: #4A4A4A;
+
 .background--gradiant {
-  background-image: linear-gradient(-176deg, #FF59EA, #21FCFF);
+  background-image: linear-gradient(-176deg, $primary-pink, $primary-blue);
 }
 
 .full-width {
@@ -17,7 +22,7 @@
 }
 
 .color--grey {
-  color: #979797;
+  color: $secondary-grey;
 }
 
 .nav-list {
@@ -43,5 +48,45 @@
   padding-right: 0px;
   li {
     padding-left: 15px;
+  }
+}
+
+.page-container {
+  display: inline;
+}
+
+.about-me {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: lighter;
+  font-size: 14px;
+}
+.subtext {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  float: right;
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  img {
+    float: left;
+    height: 140px;
+    border-radius: 50%;
+    margin-right: 17px;
+  }
+}
+
+.page-title {
+  text-align: center;
+  color: $font-black;
+  h1 {
+    font-size: 36pt;
+    font-weight: 200;
+  }
+  h2 {
+    font-size: 18pt;
+    font-weight: lighter;
   }
 }
