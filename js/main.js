@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap';
+
 import ExampleWork from './example-work';
 import PortfolioNav from './portfolio-nav';
+import Title from './title';
+
 require('../styles/main.scss');
 
 const myWork = [
@@ -39,4 +42,5 @@ const myWork = [
 ]
 
 ReactDOM.render(<PortfolioNav/>, document.getElementById('portfolio-nav'));
+ReactDOM.render(<Title title="Tommy Fritz" subtitle="Cloud Architect / Fullstack Web Developer"/>, document.getElementById('title'));
 //ReactDOM.render(<ExampleWork work={myWork}/>, document.getElementById('example-work'));
