@@ -12,6 +12,8 @@ phases:
 artifacts:
   files:
     - index.html
+    - blog.html
+    - portolio.html
     - favicon.ico
     - images/*
     - dist/bundle.js
