@@ -8,13 +8,13 @@ class PortfolioNav extends React.Component {
         <div className="full-width nav-container">
           <ul className="nav-list nav-links">
             <li className="nav-item">
-              <a className="text-white" href="#">Home<span className="sr-only">(current)</span></a>
+              <a className="text-white" href="/index.html">Home</a>
             </li>
             <li className="nav-item">
-              <a className="text-white" href="#">Blog<span className="sr-only">(current)</span></a>
+              <a className="text-white" href="/blog.html">Blog</a>
             </li>
             <li className="nav-item">
-              <a className="text-white" href="#">Portfolio</a>
+              <a className="text-white" href="/portfolio.html">Portfolio</a>
             </li>
             <li className="nav-item">
               <a className="text-white"
