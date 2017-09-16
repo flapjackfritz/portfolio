@@ -5,7 +5,7 @@ import 'bootstrap';
 require('../styles/main.scss');
 
 // import components
-import ExampleWork from './example-work';
+// import ExampleWork from './example-work';
 import PortfolioNav from './portfolio-nav';
 import Blog from './blog';
 import Title from './title';
