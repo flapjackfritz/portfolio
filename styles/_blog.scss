@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+  .blog-entry {
+    h2 {
+      font-size: 1.5em;
+    }
+    h3 {
+      font-size: 1em;
+    }
+  }
+}
+
+.blog-entry {
+  h2 {
+    font-weight: 400;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 0px;
+    padding-top: 15px;
+  }
+}
+
+.blog-nav {
+
+  .blog-nav-list {
+    list-style: none;
+    text-align: center;
+    padding-left: 0px;
+  }
+}
