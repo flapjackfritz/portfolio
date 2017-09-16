@@ -11,8 +11,14 @@ import Blog from './blog';
 import Title from './title';
 import Footer from './footer';
 
-ReactDOM.render(<Title pageName={document.getElementById('title').dataset.currentPage}/>, document.getElementById('title'));
+let currentPage = document.getElementById('title').dataset.currentPage;
+
+ReactDOM.render(<Title pageName={currentPage}/>, document.getElementById('title'));
 ReactDOM.render(<PortfolioNav/>, document.getElementById('portfolio-nav'));
-ReactDOM.render(<Blog/>, document.getElementById('blog'));
 ReactDOM.render(<Footer/>, document.getElementById('footer'));
+
+if (currentPage === "blog") {
+  ReactDOM.render(<Blog/>, document.getElementById('blog'));
+}
+
 //ReactDOM.render(<ExampleWork work={myWork}/>, document.getElementById('example-work'));
