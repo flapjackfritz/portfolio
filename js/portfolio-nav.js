@@ -5,7 +5,15 @@ class PortfolioNav extends React.Component {
   render() {
     return (
       <nav className="background--gradiant">
-        <div className="full-width nav-container">
+        <div className="nav-container container-fluid">
+
+          <i className="fa fa-bars nav-bars-mobile text-white" aria-hidden="true" id="dropdown-bars" data-toggle="dropdown"></i>
+          <div className="dropdown-menu" aria-labelledby="dropdown-bars">
+            <a className="dropdown-item" href="/index.html">Home</a>
+            <a className="dropdown-item" href="/blog.html">Blog</a>
+            <a className="dropdown-item" href="/portfolio.html">Portfolio</a>
+          </div>
+
           <ul className="nav-list nav-links">
             <li className="nav-item">
               <a className="text-white" href="/index.html">Home</a>

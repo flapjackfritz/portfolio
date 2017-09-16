@@ -44,3 +44,9 @@ const myWork = [
 ReactDOM.render(<PortfolioNav/>, document.getElementById('portfolio-nav'));
 ReactDOM.render(<Title title="Tommy Fritz" subtitle="Cloud Architect / Fullstack Web Developer"/>, document.getElementById('title'));
 //ReactDOM.render(<ExampleWork work={myWork}/>, document.getElementById('example-work'));
+
+(function($) {
+  $('#dropdown-bars').click(function() {
+    $('.navbar-collapse').collapse('hide');
+  });
+})(jQuery);
