@@ -1,18 +1,18 @@
 import React from 'react';
+import {pageHeaders} from './content-data';
 
 class Title extends React.Component {
 
   render() {
-    let title = this.props.title;
-    let subtitle = this.props.subtitle;
+    let pageName = this.props.pageName;
 
     return (
       <div className="page-title">
-        <h1>{title}</h1>
-        <h2>{subtitle}</h2>
+        <h1>{pageHeaders[pageName].title}</h1>
+        <h2>{pageHeaders[pageName].subtitle}</h2>
       </div>
     )
   };
 };
 
-export default Title
+export default Title;
