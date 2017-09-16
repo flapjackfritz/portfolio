@@ -45,14 +45,22 @@ $font-black: #4A4A4A;
   border-radius: 6px;
 }
 
-@media (max-width: 575px) {
-  .nav-links {
+@media (min-width: 576px) {
+  .nav-bars-mobile {
     display: none;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    width: 700px;
+    margin: auto;
   }
 }
 
-@media (min-width: 576px) {
-  .nav-bars-mobile {
+@media (max-width: 575px) {
+  .nav-links {
     display: none;
   }
 }
