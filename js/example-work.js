@@ -1,5 +1,6 @@
 import React from 'react';
 import ExampleWorkModal from './example-work-modal';
+import {myWork} from './content-data';
 
 class ExampleWork extends React.Component {
   constructor(props) {
@@ -32,7 +33,7 @@ class ExampleWork extends React.Component {
       <span>
         <div className="work-examples">
 
-          { this.props.work.map( (example, index) => {
+          { myWork.map( (example, index) => {
                 return (
                   <ExampleWorkBubble example={example} key={index}
                     openModal={this.openModal}/>

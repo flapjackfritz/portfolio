@@ -1,4 +1,4 @@
-// import dependencies
+// import dependencies and styles
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap';
@@ -11,7 +11,6 @@ import ExampleWork from './example-work';
 import Title from './title';
 import Footer from './footer';
 
-import {myWork} from './content-data';
 
 let currentPage = document.getElementById('title').dataset.currentPage;
 
