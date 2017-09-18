@@ -2,13 +2,24 @@
 
 }
 
+.work-examples {
+  display: flex;
+  align-items: center;
+}
+
+.exampleBubble {
+  padding: 15px;
+}
+
 .example__image {
   border-radius: 50%;
-  height: 240px;
+  height: 200px;;
 }
 
 .example__title {
   text-align: center;
+  font-size: .9em;
+  padding-top: 5px;
 }
 
 .modal--open {

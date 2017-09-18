@@ -30,7 +30,7 @@ class ExampleWork extends React.Component {
   render() {
     return (
       <span>
-        <div className="">
+        <div className="work-examples">
 
           { this.props.work.map( (example, index) => {
                 return (
@@ -54,7 +54,7 @@ class ExampleWorkBubble extends React.Component {
     let example = this.props.example;
 
     return (
-      <div className="exampleWrapper"
+      <div className="exampleBubble"
         onClick={ (evt) => this.props.openModal(evt, example) }>
         <div className="example">
           <img alt={example.image.desc}
