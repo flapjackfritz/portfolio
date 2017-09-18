@@ -31,7 +31,7 @@ class ExampleWork extends React.Component {
   render() {
     return (
       <span>
-        <section className="section section--alignCentered section--description">
+        <div className="">
 
           { this.props.work.map( (example, index) => {
                 return (
@@ -41,7 +41,7 @@ class ExampleWork extends React.Component {
               })
             }
 
-        </section>
+        </div>
 
         <ExampleWorkModal example={this.state.selectedExample}
           open={this.state.modalOpen} closeModal={this.closeModal} />
@@ -55,14 +55,14 @@ class ExampleWorkBubble extends React.Component {
     let example = this.props.example;
 
     return (
-      <div className="section__exampleWrapper"
+      <div className="exampleWrapper"
         onClick={ (evt) => this.props.openModal(evt, example) }>
-        <div className="section__example">
+        <div className="example">
           <img alt={example.image.desc}
-               className="section__exampleImage"
+               className="example__image"
                src={example.image.src}/>
-          <dl className="color--cloud">
-            <dt className="section__exampleTitle section__text--centered">
+          <dl>
+            <dt className="example__title">
               {example.title}
             </dt>
             <dd></dd>

@@ -5,9 +5,9 @@ import 'bootstrap';
 require('../styles/main.scss');
 
 // import components
-// import ExampleWork from './example-work';
 import PortfolioNav from './portfolio-nav';
 import Blog from './blog';
+import ExampleWork from './example-work';
 import Title from './title';
 import Footer from './footer';
 
@@ -21,4 +21,6 @@ if (currentPage === "blog") {
   ReactDOM.render(<Blog/>, document.getElementById('blog'));
 }
 
-//ReactDOM.render(<ExampleWork work={myWork}/>, document.getElementById('example-work'));
+import {myWork} from './content-data';
+
+ReactDOM.render(<ExampleWork work={myWork}/>, document.getElementById('portfolio'));

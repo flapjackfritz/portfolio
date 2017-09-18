@@ -16,6 +16,14 @@ $font-black: #4A4A4A;
   color: $secondary-grey;
 }
 
+.background--grey {
+  background-color: $secondary-grey;
+}
+
+.background--blue {
+  background-color: $primary-blue;
+}
+
 .nav-container {
   margin: auto;
   height: 60px;
