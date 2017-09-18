@@ -31,7 +31,7 @@ export const myWork = [
   {
     'title': "Greater Developments, LLC",
     'href': "https://www.greaterdevelopments.com/",
-    'desc': "Greater Developments is my freelance LLC business front.  This site is also hosted using a serverless stack on S3 to keep costs at a bare minumum.  I used a bootstrap template called 'greyscale' to shorten the development and design requirements. ",
+    'desc': "Greater Developments is my freelance business front.  This site is hosted using a serverless stack on Amazon Web Services to keep costs at a bare minumum.  I used a bootstrap template called 'greyscale' to shorten the development and design time.",
     'image': {
       'desc': "example screenshot of project code",
       'src': "images/example1.png",
@@ -47,7 +47,7 @@ export const myWork = [
       'desc': "Screenshot of studiocalico.com taken on Sept. 18th, 2017",
       'src': "images/studiocalico.png",
       'srcLarge': "images/studiocalico.png",
-      'comment': "“Chemistry” by Surian Soosay is licensed under CC BY 2.0 https://www.flickr.com/photos/ssoosay/4097410999"
+      'comment': ""
     }
   },
 ];
