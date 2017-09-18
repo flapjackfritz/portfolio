@@ -23,5 +23,5 @@ if (currentPage === "blog") {
 }
 
 if (currentPage === "portfolio") {
-  ReactDOM.render(<ExampleWork work={myWork}/>, document.getElementById('portfolio'));
+  ReactDOM.render(<ExampleWork/>, document.getElementById('portfolio'));
 }

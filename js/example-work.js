@@ -8,7 +8,7 @@ class ExampleWork extends React.Component {
 
     this.state = {
       'modalOpen': false,
-      'selectedExample': this.props.work[0]
+      'selectedExample': myWork[0]
     };
 
     this.openModal = this.openModal.bind(this);
