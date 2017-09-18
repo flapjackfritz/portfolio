@@ -4,7 +4,7 @@ class PortfolioNav extends React.Component {
 
   render() {
     return (
-      <nav className="background--gradiant">
+      <nav className="background--gradiant" name="top">
         <div className="nav-container container-fluid">
 
           <i className="fa fa-bars nav-bars-mobile text-white" aria-hidden="true" id="dropdown-bars" data-toggle="dropdown"></i>

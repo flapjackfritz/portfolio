@@ -11,6 +11,8 @@ import ExampleWork from './example-work';
 import Title from './title';
 import Footer from './footer';
 
+import {myWork} from './content-data';
+
 let currentPage = document.getElementById('title').dataset.currentPage;
 
 ReactDOM.render(<Title pageName={currentPage}/>, document.getElementById('title'));
@@ -21,6 +23,6 @@ if (currentPage === "blog") {
   ReactDOM.render(<Blog/>, document.getElementById('blog'));
 }
 
-import {myWork} from './content-data';
-
-ReactDOM.render(<ExampleWork work={myWork}/>, document.getElementById('portfolio'));
+if (currentPage === "portfolio") {
+  ReactDOM.render(<ExampleWork work={myWork}/>, document.getElementById('portfolio'));
+}

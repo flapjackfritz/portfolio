@@ -1,6 +1,10 @@
 import React from 'react';
 import {blogEntries} from './content-data';
 
+function toSlug(title) {
+  return title.replace(/\s+/g, '-').toLowerCase();
+}
+
 class Blog extends React.Component {
 
   render() {
@@ -15,12 +19,14 @@ class Blog extends React.Component {
                   "August", "September", "October",
                   "November", "December"
                 ];
-                let date = new Date(blogEntry.date);
 
+                let slug = toSlug(blogEntry.shortTitle);
+                let date = new Date(blogEntry.date);
+                // let slug = toSlug(blogEntry.shortTitle);
                 return (
                   <li key={index}>{monthNames[date.getMonth()]} {date.getFullYear()}
                     <ul className="blog-nav-list">
-                      <li>- <a href="#">{blogEntry.shortTitle}</a></li>
+                      <li>- <a href={'#' + slug}>{blogEntry.shortTitle}</a></li>
                     </ul>
                   </li>
                 )
@@ -45,8 +51,8 @@ class BlogEntry extends React.Component {
     let blogContent = this.props.blogContent;
 
     return (
-      <article className="blog-entry">
-        <h2>{blogContent.title}</h2>
+      <article className="blog-entry" id={toSlug(blogContent.shortTitle)}>
+        <h2><a href="#top"><i className="fa fa-angle-double-up" aria-hidden="true" title="Back to top of page"></i></a>{blogContent.title}</h2>
         <h3>{blogContent.date} - {blogContent.author}</h3>
         <p>{blogContent.entry}</p>
       </article>
