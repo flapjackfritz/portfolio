@@ -15,7 +15,6 @@ class ExampleWork extends React.Component {
   }
 
   openModal(evt, example) {
-    console.log("Clicked the div to open the modal")
     this.setState({
       'modalOpen': true,
       'selectedExample': example
