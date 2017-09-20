@@ -2,6 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap';
+require('../styles/main.scss');
 
 // import components
 import PortfolioNav from './portfolio-nav';
