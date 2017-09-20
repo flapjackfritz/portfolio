@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: './js/main.js',
@@ -20,25 +21,13 @@ module.exports = {
     },
     {
       test: /\.(scss)$/,
-      use: [{
-        loader: 'style-loader', // inject CSS to page
-      }, {
-        loader: 'css-loader', // translates CSS into CommonJS modules
-      }, {
-        loader: 'postcss-loader', // Run post css actions
-        options: {
-          plugins: function () { // post css plugins, can be exported to postcss.config.js
-            return [
-              require('precss'),
-              require('autoprefixer')
-            ];
-          }
-        }
-      }, {
-        loader: 'sass-loader' // compiles SASS to CSS
-      }]
+      use: ExtractTextPlugin.extract({
+        fallback: 'style-loader',
+        //resolve-url-loader may be chained before sass-loader if necessary
+        use: ['css-loader', 'sass-loader']
+      })
     },
-  ]
+    ],
   },
   plugins: [
     new webpack.ProvidePlugin({
@@ -46,6 +35,7 @@ module.exports = {
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
       Popper: ['popper.js', 'default']
-    })
+    }),
+    new ExtractTextPlugin("styles.css"),
   ]
 }
