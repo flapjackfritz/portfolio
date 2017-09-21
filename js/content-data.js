@@ -11,6 +11,17 @@ export const blogEntries = [
 
 export const myWork = [
   {
+    'title': "StudioCalico",
+    'href': "https://www.studiocalico.com",
+    'desc': "I worked for StudioCalico for several years before going into freelance work.  I was primarily a backend developer there, and contributed to many of the engineering tasks, bug fixes, updates on their suite of eCommerce applications.  I contributed to the cart checkout process, the subscription service, sales and 'reveals/previews', promo codes, and the administration tools that the company uses interally every day.",
+    'image': {
+      'desc': "Screenshot of studiocalico.com taken on Sept. 18th, 2017",
+      'src': "images/studiocalico.png",
+      'srcLarge': "images/studiocalico.png",
+      'comment': ""
+    }
+  },
+  {
     'title': "This Website",
     'href': "https://github.com/flapjackfritz/portfolio",
     'desc': "This website is itself an example of my work.  I designed and developed it myself using a serverless stack. I chose to host it on AWS using a combination of services that renders it virtually free.  It uses ReactJS to display the content effectively and make updating it easier.  It's stored on S3 using CodeDeploy, CodePipeline, and Lambda to build and deploy it whenever I update and push to the github repository.",
@@ -29,17 +40,6 @@ export const myWork = [
       'desc': "example screenshot of project code",
       'src': "images/example1.png",
       'srcLarge': "images/example1-large.png",
-      'comment': ""
-    }
-  },
-  {
-    'title': "StudioCalico",
-    'href': "https://www.studiocalico.com",
-    'desc': "I worked for StudioCalico for several years before going into freelance work.  I was primarily a backend developer there, and contributed to many of the engineering tasks, bug fixes, updates on their suite of eCommerce applications.  I contributed to the cart checkout process, the subscription service, sales and 'reveals/previews', promo codes, and the administration tools that the company uses interally every day.",
-    'image': {
-      'desc': "Screenshot of studiocalico.com taken on Sept. 18th, 2017",
-      'src': "images/studiocalico.png",
-      'srcLarge': "images/studiocalico.png",
       'comment': ""
     }
   },
