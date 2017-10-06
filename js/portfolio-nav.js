@@ -24,11 +24,6 @@ class PortfolioNav extends React.Component {
             <li className="nav-item">
               <a className="text-white" href="/portfolio.html">Portfolio</a>
             </li>
-            <li className="nav-item">
-              <a className="text-white"
-                href="https://docs.google.com/document/d/1pcfv8d7eAkboRA6X4P9yAG8a4o12MHoXarN5QjTO0UU/edit"
-                target="_blank">Resume <i className="fa fa-external-link" aria-hidden="true"></i></a>
-            </li>
           </ul>
           <ul className="nav-list nav-social">
             <li className="nav-item">
