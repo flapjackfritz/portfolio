@@ -1,4 +1,5 @@
 # Tommy Fritz's Portfolio
 Samples, code, and features that Tommy Fritz has created.
 
-Serverless hosting with react on AWS
+Serverless hosting on AWS
+Built with ReactJS
