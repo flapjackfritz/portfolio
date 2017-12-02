@@ -35,8 +35,9 @@
   "scripts": {
     "test": "jest",
     "test-watch": "jest --watch",
-    "webpack": "webpack -wd",
-    "webpack-watch": "webpack --watch --devtool source-map"
+    "webpack": "webpack -wd source-map",
+    "webpack-watch": "webpack --watch --devtool source-map",
+    "build-webpack": "webpack -p"
   },
   "babel": {
     "presets": [
