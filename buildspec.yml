@@ -3,10 +3,11 @@ version: 0.1
 phases:
   pre_build:
     commands:
-      - npm install
+      - apt-get install yarn -y
+      - yarn install
   build:
     commands:
-      - npm build-webpack
+      - yarn build-webpack
 
 artifacts:
   files:
