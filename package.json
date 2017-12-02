@@ -35,6 +35,11 @@
     "webpack": "webpack -wd",
     "webpack-watch": "webpack --watch --devtool source-map"
   },
+  "babel": {
+    "presets": [
+      "react"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/flapjackfritz/portfolio.git"

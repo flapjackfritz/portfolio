@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-module.exports = {
+const config = {
   entry: './js/main.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -15,7 +15,7 @@ module.exports = {
       use: {
         loader: 'babel-loader',
         options: {
-          presets: ['react']
+          presets: ['react', 'env']
         }
       },
     },
@@ -39,3 +39,5 @@ module.exports = {
     new ExtractTextPlugin("styles.css"),
   ]
 }
+
+module.exports = config;
