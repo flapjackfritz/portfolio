@@ -3,10 +3,17 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const config = {
-  entry: './lib/main.js',
+  entry: {
+    vendor: [
+      'react',
+      'react-dom',
+      'bootstrap',
+    ],
+    app: ['./lib/main.js']
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: '[name].js'
   },
   module: {
     rules: [{
