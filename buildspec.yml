@@ -15,5 +15,6 @@ artifacts:
     - portfolio.html
     - favicon.ico
     - images/*
-    - dist/bundle.js
+    - dist/app.js
+    - dist/vendor.js
     - dist/styles.css
