@@ -65,6 +65,10 @@ $font-black: #4A4A4A;
     width: 700px;
     margin: auto;
   }
+
+  .dropdown-menu-mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 575px) {
