@@ -40,9 +40,16 @@
     "build-webpack": "webpack -p"
   },
   "babel": {
-    "presets": [
-      "react"
-    ]
+    "presets": ["react"],
+    "env": {
+      "test": {
+        "presets": [
+          "jest",
+          "react",
+          [ "env", { "modules": "commonjs" } ]
+        ]
+      }
+    }
   },
   "repository": {
     "type": "git",
