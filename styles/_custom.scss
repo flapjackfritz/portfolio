@@ -57,17 +57,15 @@ $font-black: #4A4A4A;
   .nav-bars-mobile {
     display: none;
   }
-
+  .dropdown-menu-mobile {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
   .main-content {
     width: 700px;
     margin: auto;
-  }
-
-  .dropdown-menu-mobile {
-    display: none;
   }
 }
 
